@@ -11,3 +11,7 @@ body {
 footer {
     background-color: #333333;
 }
+
+.card {
+    margin-bottom: 1rem;
+}
