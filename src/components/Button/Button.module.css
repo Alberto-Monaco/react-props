@@ -1,0 +1,10 @@
+.button {
+    background-color: #daa521;
+    color: white
+}
+
+.button:hover {
+    background-color: #ff0000;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
