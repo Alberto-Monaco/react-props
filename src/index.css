@@ -1,17 +1,22 @@
 img {
     max-width: 100%;
-    margin: auto;
+
 
 }
 
-body {
-    background-color: #e5e5e5;
-}
+
+
 
 footer {
     background-color: #333333;
+    padding: 1rem;
+    min-height: 100px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .card {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
