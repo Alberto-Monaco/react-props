@@ -2,13 +2,6 @@
 //import Button from './Button/Button'
 
 export default function Card({ post }) {
-	const tagColors = {
-		html: '#28a745',
-		css: '#e83e8c',
-		js: '#ffc107',
-		php: '#61dafb'
-	}
-	const getColor = (tag) => tagColors[tag.toLowerCase()] || '#000000'
 	return (
 		<>
 			{post.published && (
@@ -17,13 +10,7 @@ export default function Card({ post }) {
 					<div className='card-body'>
 						<h5 className='card-title'>{post.title}</h5>
 						<p className='card-text'>{post.content}</p>
-						<p className='card-text'>
-							{post.tags.map((tag, index) => (
-								<span key={index} style={{ color: getColor(tag) }}>
-									{tag}{' '}
-								</span>
-							))}
-						</p>
+						<p className='card-text'>{post.tags.join(', ')}</p>
 					</div>
 				</div>
 			)}
