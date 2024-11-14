@@ -8,7 +8,9 @@ export default function Card({ post }) {
 		js: '#ffc107',
 		php: '#61dafb'
 	}
-	const getColor = (tag) => tagColors.tag.toLowerCase() || '#000000'
+	function getColor(tag) {
+		return tagColors[tag.toLowerCase()] || '#000000'
+	}
 	return (
 		<>
 			{post.published && (
